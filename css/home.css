@@ -58,6 +58,10 @@ header .headerElement:hover{
     
 }
 
+header #home a{
+    text-decoration:underline var(--button-color);
+}
+
 main{
     display:flex;
     flex-direction:column;
