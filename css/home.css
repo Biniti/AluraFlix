@@ -1,0 +1,145 @@
+
+/*fonts:
+ font-family: 'Fira Code', monospace;
+ font-family: 'Press Start 2P', cursive;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    
+    --bg-color: #777777;
+    --title-color: #F25A70;
+    --text-color: white;
+    --button-color: #7C5E99;
+    --header-color: #444B54;
+}
+
+
+body {
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: var(--bg-color);
+    
+}
+
+header{
+    background-color:var(--header-color);
+
+    width:100vw;
+    height: 6vh;
+    
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size:0.6rem;
+    color:var(--text-color);
+    text-shadow: 1px 1px 1px black;
+}
+
+header .headerElement{
+    
+    padding:1rem;
+}
+
+
+header .headerElement:hover{
+
+    color:var(--button-color);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    text-decoration: underline;
+    transition:0.3s;
+    
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+main #title h1{
+    font-family: 'Press Start 2P', cursive;
+    color:var(--title-color);
+    text-shadow: 4px 4px 4px black;
+    margin:3rem;
+   
+    font-size:2rem;
+}   
+
+
+
+main #favoriteMovie label{
+    font-family: 'Fira Code', monospace;
+    color:var(--text-color);
+
+}
+
+#favoriteMovie .input{
+    height:2rem;
+    width:16rem;
+    border:2px solid black;
+    box-shadow: 1px 1px 1px;
+    margin: 1rem -0.6rem;
+}
+
+.button{
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    
+    margin-left: -0.5rem;
+    width:16rem;
+    height:2rem;
+
+    box-shadow: 0.5px 0.5px 0.5px black;
+
+}
+
+#images{
+    padding:3rem;
+    
+}
+
+#images img{
+    border: 2px solid var(--title-color);
+    box-shadow: 1px 1px 1px var(--title-color);
+
+    margin:0 2rem;
+}
+
+footer{
+    background-color: var(--header-color);
+    width:100vw;
+    height:3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+
+footer h2 a{
+    color:var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    padding:1rem;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size:1rem;
+    text-shadow: 4px 1px 1px var(--button-color);
+}
+
+
+footer h2 a:hover{
+    color:var(--button-color);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    text-decoration: underline;
+    transition:0.3s;
+}
