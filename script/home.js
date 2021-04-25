@@ -4,14 +4,14 @@ const returnApp = document.querySelector("#returnApp")
 
 const exit = document.querySelector("#sair")
 
-returnApp.style.visibility = "collapse"
+returnApp.style.visibility = "hidden"
 
 exit.onclick = () =>{
-    application.style.visibility = "collapse"
+    application.style.visibility = "hidden"
     returnApp.style.visibility = "visible"
 }
 
 returnApp.onclick = () =>{
     application.style.visibility = "visible"
-    returnApp.style.visibility = "collapse"
+    returnApp.style.visibility = "hidden"
 }
